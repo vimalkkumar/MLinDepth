@@ -4,4 +4,4 @@
   
   Basically, Machine Learning is generally categorized into three types: (a) Supervised Learning (b) Unsupervised Learning (c) Reinforcement learning.
   
-  In this project, I have prepare small datasets including the basics concepts of Machine Learnig.
+  In this project, I have prepare small datasets including the basics concepts of Machine Learnig using SKlearn Library.
