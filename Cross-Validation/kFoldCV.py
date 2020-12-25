@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sbn
 
-dataset = pd.read_csv('../Machine Learning A-Z/Datasets/Social_Network_Ads.csv')
+dataset = pd.read_csv('../Datasets/Social_Network_Ads.csv')
 X = dataset.iloc[:, 2:4].values
 y = dataset.iloc[:, 4].values
 
