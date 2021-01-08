@@ -4,7 +4,7 @@
 #   - Kernel PCA
 #   - Quadratic Discriminant Analysis (QDA)
 """
-    0) Alcohol
+        0) Alcohol
  	1) Malic acid
  	2) Ash
 	3) Alcalinity of ash  
@@ -17,7 +17,7 @@
  	10) Hue
  	11) OD280/OD315 of diluted wines
  	12) Proline
-    13) Customer_Segment
+        13) Customer_Segment
 """
 import numpy as np
 import pandas as pd
