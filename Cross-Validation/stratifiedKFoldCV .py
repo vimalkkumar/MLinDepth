@@ -99,15 +99,20 @@ print('Avereage score of Naive Bayes : {}'.format(np.array(score_nb).mean()))
 We have cross_val_score() to handle the above problem in sklearn library
 """
 from sklearn.model_selection import cross_val_score, cross_val_predict
-print('Avereage score of Logistic Regression : {}'.format(cross_val_score(estimator = lr_classifier, X = X_test, y = y_test, cv = 10).mean()))
-print('Avereage score of Support Vector Machine : {}'.format(cross_val_score(SVC(), X_test, y_test, cv = 10).mean()))
-print('Avereage score of Decision Tree : {}'.format(cross_val_score(DecisionTreeClassifier(criterion = 'entropy'), X_test, y_test, cv = 10).mean()))
-print('Avereage score of Random Forest : {}'.format(cross_val_score(RandomForestClassifier(n_estimators = 60), X_test, y_test, cv = 10).mean()))
-print('Avereage score of Naive Bayes : {}'.format(cross_val_score(GaussianNB(), X_test, y_test, cv = 10).mean()))
+print('Avereage score of Logistic Regression : {}'\
+      .format(cross_val_score(estimator = lr_classifier, X = X_test, y = y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
+print('Avereage score of Support Vector Machine : {}'\
+      .format(cross_val_score(SVC(), X_test, y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
+print('Avereage score of Decision Tree : {}'\
+      .format(cross_val_score(DecisionTreeClassifier(criterion = 'entropy'), X_test, y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
+print('Avereage score of Random Forest : {}'\
+      .format(cross_val_score(RandomForestClassifier(n_estimators = 60), X_test, y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
+print('Avereage score of Naive Bayes : {}'\
+      .format(cross_val_score(GaussianNB(), X_test, y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
 
 # Predicting the cross value
-print('Avereage predicition of Logistic Regression : {}'.format(cross_val_predict(estimator = lr_classifier, X = X_test, y = y_test, cv = 10).mean()))
-print('Avereage predicition of Support Vector Machine : {}'.format(cross_val_predict(SVC(), X_test, y_test, cv = 10).mean()))
-print('Avereage predicition of Decision Tree : {}'.format(cross_val_predict(DecisionTreeClassifier(criterion = 'entropy'), X_test, y_test, cv = 10).mean()))
-print('Avereage predicition of Random Forest : {}'.format(cross_val_predict(RandomForestClassifier(n_estimators = 60), X_test, y_test, cv = 10).mean()))
-print('Avereage predicition of Naive Bayes : {}'.format(cross_val_predict(GaussianNB(), X_test, y_test, cv = 10).mean()))
+print('Avereage predicition of Logistic Regression : {}'.format(cross_val_predict(estimator = lr_classifier, X = X_test, y = y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
+print('Avereage predicition of Support Vector Machine : {}'.format(cross_val_predict(SVC(), X_test, y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
+print('Avereage predicition of Decision Tree : {}'.format(cross_val_predict(DecisionTreeClassifier(criterion = 'entropy'), X_test, y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
+print('Avereage predicition of Random Forest : {}'.format(cross_val_predict(RandomForestClassifier(n_estimators = 60), X_test, y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
+print('Avereage predicition of Naive Bayes : {}'.format(cross_val_predict(GaussianNB(), X_test, y_test, cv = StratifiedKFold(n_splits = 10, shuffle=True)).mean()))
