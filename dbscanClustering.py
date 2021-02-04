@@ -1,5 +1,7 @@
 # DBSCAN (Density Based Spatial Clustering of Application with Noise) Algorithm
 #reset -f
+# Importing the important libraries
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
