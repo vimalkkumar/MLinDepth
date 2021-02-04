@@ -8,7 +8,7 @@
  	6) Flavanoids, 7) Nonflavanoid phenols, 8) Proanthocyanins, 9) Color intensity, 10) Hue
  	11) OD280/OD315 of diluted wines, 12) Proline, 13) Customer_Segment
 """
-
+# Importing the important libraries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
