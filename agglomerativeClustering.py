@@ -1,5 +1,6 @@
 # Hierarchical Clustering - Agglomerative Clustring
 # reset -f
+# Importing the important libraries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
