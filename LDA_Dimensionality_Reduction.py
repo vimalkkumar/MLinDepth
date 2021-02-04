@@ -19,6 +19,7 @@
  	12) Proline
         13) Customer_Segment
 """
+# Importing the important libraries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
