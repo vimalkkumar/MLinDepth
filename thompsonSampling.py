@@ -1,4 +1,5 @@
 # Thompson Sampling Algorithm - Reinforcement Learnig
+# Importing the important libraries
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
